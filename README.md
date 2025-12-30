@@ -27,7 +27,7 @@ Our framework is built upon five interacting principles:
 4.  **Self-Modeling (Hierarchical Control):** The brain constructs a high-level internal model of itself to organize agency, predict its own actions, and interact in social contexts.
 5.  **Social Coupling (Synchronization of Priors):** When predictive agents interact, they strive to minimize mutual prediction error, leading to the emergence of shared generative models (culture, language, institutions).
 
-## 🚀Repository Contents
+## Repository Contents
 
 * `./paper/`: The full academic paper in LaTeX source (`.tex`) and compiled PDF format (`.pdf`).
 * `./figures/`: High-resolution vector graphics (PDF/SVG) for all diagrams presented in the paper.
