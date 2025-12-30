@@ -1,0 +1,97 @@
+\documentclass[11pt, a4paper]{article}
+
+% --- Core Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{booktabs}
+\usepackage{cite}
+
+% --- Page Layout ---
+\geometry{left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
+\onehalfspacing
+
+% --- Hyperlink Setup ---
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=cyan,
+    pdftitle={The Fragmentation Problem in the Sciences of Mind and Society},
+    pdfauthor={Your Name}
+}
+
+% --- Title Section ---
+\title{\textbf{The Fragmentation Problem in the Sciences of Mind and Society: \\ A Minimal Unified Framework}}
+\author{\textbf{[Your Name]} \\ \textit{Independent Researcher / Open-Source Theory Project} \\ \texttt{github.com/[Your-Username]/five-rule-framework}}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\noindent Despite significant advancements in neuroscience, psychology, artificial intelligence, and sociology, these disciplines remain theoretically fragmented. This paper proposes a minimal unified framework consisting of five interacting principles: \textbf{Prediction} (free energy minimization), \textbf{Feedback} (active inference), \textbf{Attention} (precision weighting), \textbf{Self-Modeling} (hierarchical integration), and \textbf{Social Coupling} (alignment of generative models). By formalizing these rules, we provide a continuous mathematical path from neural computation to social organization, offering derivations for complex phenomena such as anxiety and political polarization.
+\end{abstract}
+
+\section{Introduction}
+Modern science explains the human condition through isolated lenses. Neuroscience focuses on synaptic mechanics \cite{friston2010}, psychology on behavioral heuristics \cite{clark2013}, and sociology on institutional structures \cite{luhmann1995}. This fragmentation prevents a cumulative understanding of the human system. We propose that these domains are not separate entities but different scales of a single information-processing imperative: the minimization of variational free energy.
+
+\section{The Five-Rule Framework}
+
+\subsection{Prediction: The Core Imperative}
+At the microscopic level, the brain functions as a prediction engine. It maintains homeostasis by minimizing the divergence between internal models ($m$) and sensory observations ($o$). This is formalized as Variational Free Energy ($F$):
+\begin{equation}
+F \approx -\ln p(o|m) + D_{KL}[q(s)||p(s|m)]
+\end{equation}
+
+\subsection{Feedback: Active Inference}
+The system closes the loop with the environment via Active Inference. To reduce prediction error, the system must either update its internal belief (learning) or act upon the world to change sensory input ($a$):
+\begin{equation}
+\dot{a} = -\frac{\partial F}{\partial a}
+\end{equation}
+
+\subsection{Attention: Precision Weighting}
+Attention is not a "spotlight" but the assignment of high \textbf{precision} ($\Pi$) to specific prediction errors. This gates which information updates the global workspace \cite{hohwy2013}:
+\begin{equation}
+\xi = \Pi \cdot (o - g(m))
+\end{equation}
+
+\subsection{Self-Modeling: Hierarchical Control}
+To coordinate actions, the system generates a high-level self-model ($S_{self}$). This is a statistical compression used to manage agency and social accountability \cite{metzinger2003}.
+
+\subsection{Social Coupling: Shared Generative Models}
+When agents interact, they minimize mutual free energy by synchronizing their priors. This coupling generates macroscopic structures: language, norms, and culture \cite{constant2018}.
+\begin{equation}
+F_{\text{joint}} \approx F_i(o_j) + F_j(o_i)
+\end{equation}
+
+\section{Applications and Derivations}
+
+\subsection{Clinical Anxiety}
+Anxiety arises when a system assigns high precision ($\Pi_{high}$) to uncertain future states ($o_{uncertain}$) that cannot be resolved through immediate action. This results in a persistent, unresolvable prediction error loop.
+
+\subsection{Political Polarization}
+Polarization is a strategy to minimize social free energy. Agents protect their generative models by reducing precision ($\Pi \to 0$) on contradictory data from out-groups, favoring social stability over epistemic accuracy \cite{constant2018}.
+
+\section{Conclusion}
+The Five-Rule Framework reduces the complexity of human reality to a set of interacting principles. This open-source project invites further refinement of these formalisms to bridge the gap between the neuron and the nation-state.
+
+% --- Bibliography ---
+\begin{thebibliography}{99}
+
+\bibitem{friston2010} Friston, K. (2010). The free-energy principle: a unified brain theory? \textit{Nature Reviews Neuroscience}, 11(2), 127--138.
+\bibitem{clark2013} Clark, A. (2013). Whatever next? Predictive brains, situated agents, and the future of cognitive science. \textit{Behavioral and Brain Sciences}, 36(3), 181--204.
+\bibitem{hohwy2013} Hohwy, J. (2013). \textit{The Predictive Mind}. Oxford University Press.
+\bibitem{metzinger2003} Metzinger, T. (2003). \textit{Being No One: The Self-Model Theory of Subjectivity}. MIT Press.
+\bibitem{luhmann1995} Luhmann, N. (1995). \textit{Social Systems}. Stanford University Press.
+\bibitem{constant2018} Constant, A., et al. (2018). A Social Free Energy Principle. \textit{Frontiers in Psychology}, 9, 2141.
+
+\end{thebibliography}
+
+\end{document}
